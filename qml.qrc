@@ -1,0 +1,14 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>MainForm.ui.qml</file>
+        <file>CarsModel.qml</file>
+        <file>Logos/audi.png</file>
+        <file>Logos/bmw.png</file>
+        <file>Logos/fiat.jpg</file>
+        <file>Logos/ford.jpg</file>
+        <file>Logos/mercedes.jpg</file>
+        <file>Logos/seat.png</file>
+        <file>Logos/volvo.jpg</file>
+    </qresource>
+</RCC>
