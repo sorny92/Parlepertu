@@ -9,18 +9,20 @@
 class TTS :public QObject
 {
   Q_OBJECT
+  Q_PROPERTY(QString text READ text WRITE setText NOTIFY textChanged)
 public:
   TTS();
   Q_INVOKABLE void speak();
+  QString text();
+  void setText(const QString &text);
 
-public slots:
-  void otherSpeak() {
-    speech_->say("HOLA");
-  }
+signals:
+  void textChanged();
 
 private:
   QTextToSpeech *speech_;
   QVector<QVoice> voices_;
+  QString text_;
 };
 
 #endif // TTS_H

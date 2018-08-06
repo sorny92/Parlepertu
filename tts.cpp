@@ -11,6 +11,19 @@ TTS::TTS()
 
 void TTS::speak()
 {
-  speech_->say("hola");
-  qDebug() << "SOY HOLA";
+  speech_->say(text_);
+  qDebug() << "SAYING " << text_;
+}
+
+QString TTS::text()
+{
+  return text_;
+}
+
+void TTS::setText(const QString &text)
+{
+  if(text_ != text) {
+      text_ = text;
+      emit textChanged();
+    }
 }

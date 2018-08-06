@@ -1,7 +1,6 @@
 <RCC>
     <qresource prefix="/">
         <file>main.qml</file>
-        <file>MainForm.ui.qml</file>
         <file>CarsModel.qml</file>
         <file>Logos/audi.png</file>
         <file>Logos/bmw.png</file>
