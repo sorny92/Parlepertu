@@ -1,13 +1,20 @@
 <RCC>
     <qresource prefix="/">
         <file>main.qml</file>
-        <file>CarsModel.qml</file>
-        <file>Logos/audi.png</file>
-        <file>Logos/bmw.png</file>
-        <file>Logos/fiat.jpg</file>
-        <file>Logos/ford.jpg</file>
-        <file>Logos/mercedes.jpg</file>
-        <file>Logos/seat.png</file>
-        <file>Logos/volvo.jpg</file>
+        <file>Pictogram.qml</file>
+        <file>example_pics/Logos/audi.png</file>
+        <file>example_pics/Logos/bmw.png</file>
+        <file>example_pics/Logos/fiat.jpg</file>
+        <file>example_pics/Logos/ford.jpg</file>
+        <file>example_pics/Logos/mercedes.jpg</file>
+        <file>example_pics/Logos/seat.png</file>
+        <file>example_pics/Logos/volvo.jpg</file>
+        <file>main.cpp</file>
+        <file>tts.cpp</file>
+        <file>tts.h</file>
+        <file>datamodel.cpp</file>
+        <file>datamodel.h</file>
+        <file>picloader.cpp</file>
+        <file>picloader.h</file>
     </qresource>
 </RCC>

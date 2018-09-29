@@ -7,9 +7,9 @@ import parlepertu.tts 1.0
 
 ApplicationWindow {
   id: view
-  title: qsTr("Hello World")
-  width: 640
-  height: 480
+  title: qsTr("Parlepertu")
+  width: 1280
+  height: 720
   visible: true
 
   TTS {
@@ -60,34 +60,10 @@ ApplicationWindow {
       Layout.alignment: Qt.AlignHCenter | Qt.AlignBottom
       Layout.fillHeight: true
       Layout.fillWidth: true
-      model: CarsModel {}
-      delegate: carDelegate
-    }
-
-  }
-
-  Component {
-    id: carDelegate
-    Item {
-      width: grid.cellWidth;
-      height: grid.cellHeight;
-      Column {
-        spacing: 5;
-        Image {
-          source: origin;
-          width: 90;
-          height: width;
-        }
-        Text {
-          text: name;
-          anchors.horizontalCenter: parent.horizontalCenter;
-        }
-      }
+      model: dataModel
+      delegate: Pictogram {}
     }
   }
-
-
-
 }
 
 /*##^## Designer {

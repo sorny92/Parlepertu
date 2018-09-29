@@ -1,6 +1,6 @@
 TEMPLATE = app
 
-QT += qml quick widgets texttospeech
+QT += qml quick gui widgets texttospeech
 
 #Allows to get the strings to translate in QML files
 lupdate_only {
@@ -8,7 +8,9 @@ lupdate_only {
 }
 
 SOURCES += main.cpp \
-    tts.cpp
+    tts.cpp \
+    datamodel.cpp \
+    picloader.cpp \
 
 RESOURCES += qml.qrc
 
@@ -22,6 +24,11 @@ QML_IMPORT_PATH =
 include(deployment.pri)
 
 HEADERS += \
+    tts.h \
+    datamodel.h \
+    picloader.h \
+    datamodel.h \
+    picloader.h \
     tts.h
 
 DISTFILES += \
